@@ -3,48 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Rizqy Hillan</title>
+  <title>Rizqy Hillan | Linux Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Dynamic Island -->
-  <nav class="island">
-    <a href="#profile">Profil</a>
-    <a href="#skills">Skill</a>
-    <a href="#contact">Kontak</a>
-  </nav>
+  <!-- Hyprland Top Bar -->
+  <div class="hyprbar">
+    <div class="workspace">
+      <div class="ws active"></div>
+      <div class="ws"></div>
+      <div class="ws"></div>
+    </div>
 
-  <!-- Profile Section -->
-  <section id="profile" class="profile">
-    <img src="https://via.placeholder.com/150" alt="Foto Profil">
-    <h1>Rizqy Hillan</h1>
-    <p>Mahasiswa & Web Developer Pemula yang sedang belajar membangun
-       website modern menggunakan HTML, CSS, dan Laravel.</p>
+    <div class="nav-links">
+      <a href="#profile">Profil</a>
+      <a href="#skills">Skill</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="terminal-header">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h1>rizqy@linux:~$ whoami</h1>
+    <p>
+      Saya Rizqy Hillan, mahasiswa yang tertarik pada dunia Linux dan
+      pengembangan web. Fokus pada pembuatan aplikasi modern dengan
+      pendekatan clean dan efisien.
+    </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Keahlian</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript Dasar</li>
-      <li>Laravel</li>
-      <li>GitHub</li>
-    </ul>
+  <!-- Skills -->
+  <section id="skills">
+    <div class="terminal-header">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h2>rizqy@linux:~$ skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill">Linux</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Laravel</div>
+      <div class="skill">Git</div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Kontak</h2>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="terminal-header">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+
+    <h2>rizqy@linux:~$ contact</h2>
     <p>Email: rizqy@example.com</p>
     <p>GitHub: github.com/rizqyhillan</p>
   </section>
 
   <footer>
-    © 2026 Rizqy Hillan
+    © 2026 Rizqy Hillan — Powered by Linux & Coffee
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

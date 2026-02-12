@@ -3,114 +3,143 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "JetBrains Mono", monospace;
       scroll-behavior: smooth;
     }
 
     body {
       min-height: 100vh;
-      background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
-      color: white;
-      padding: 40px 20px;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+      overflow-x: hidden;
     }
 
-    /* Dynamic Island Navbar */
-    .island {
+    /* Hyprland-style top bar */
+    .hyprbar {
       position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 48px;
       backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 999px;
-      padding: 12px 24px;
+      background: rgba(15, 23, 42, 0.6);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
       display: flex;
-      gap: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
       z-index: 1000;
     }
 
-    .island a {
+    .workspace {
+      display: flex;
+      gap: 10px;
+    }
+
+    .ws {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      background: #1f2933;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: 0.3s;
+    }
+
+    .ws.active {
+      background: #22c55e;
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    .nav-links a {
+      color: #cbd5f5;
       text-decoration: none;
-      color: white;
-      font-weight: 500;
+      margin-left: 20px;
+      font-size: 14px;
       opacity: 0.8;
       transition: 0.3s;
     }
 
-    .island a:hover {
+    .nav-links a:hover {
       opacity: 1;
+      color: #22c55e;
     }
 
-    /* Glass Sections */
+    /* Glass terminal cards */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 120px auto;
       padding: 40px;
-      border-radius: 24px;
+      border-radius: 20px;
       backdrop-filter: blur(25px);
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
     }
 
     h1, h2 {
+      color: #22c55e;
       margin-bottom: 16px;
     }
 
     p {
+      line-height: 1.7;
       opacity: 0.9;
-      line-height: 1.6;
     }
 
-    /* Profile */
-    .profile {
-      text-align: center;
+    /* Terminal header */
+    .terminal-header {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
     }
 
-    .profile img {
-      width: 140px;
+    .dot {
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      margin-bottom: 20px;
-      border: 3px solid rgba(255,255,255,0.4);
     }
 
-    /* Skills */
-    .skills ul {
-      list-style: none;
+    .red { background: #ef4444; }
+    .yellow { background: #f59e0b; }
+    .green { background: #22c55e; }
+
+    /* Skills grid */
+    .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
     }
 
-    .skills li {
-      padding: 12px;
+    .skill {
+      padding: 14px;
       text-align: center;
       border-radius: 12px;
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.4);
+      border: 1px solid rgba(34,197,94,0.3);
+      transition: 0.3s;
     }
 
-    /* Contact */
-    .contact p {
-      margin: 8px 0;
+    .skill:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 15px rgba(34,197,94,0.6);
     }
 
     footer {
       text-align: center;
-      opacity: 0.7;
-      margin-top: 40px;
+      margin: 40px 0;
+      opacity: 0.6;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      .island {
-        gap: 12px;
-        padding: 10px 16px;
-      }
-
       section {
         padding: 24px;
-        margin: 100px auto;
+        margin: 100px 16px;
+      }
+
+      .nav-links a {
+        margin-left: 10px;
+        font-size: 12px;
       }
     }
