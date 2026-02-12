@@ -1,69 +1,72 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizqy Hillan | Discord Portfolio</title>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+  <!-- Server icons -->
+  <div class="servers">
+    <div class="server-icon">R</div>
+  </div>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="styles.css">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Portfolio</h2>
+    <div class="channel active" onclick="showSection('profile', this)"># profile</div>
+    <div class="channel" onclick="showSection('skills', this)"># skills</div>
+    <div class="channel" onclick="showSection('contact', this)"># contact</div>
+  </div>
 
-      <title>Responsive portfolio website Rian - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         
-      </header>
+  <!-- Main area -->
+  <div class="main">
+    <div class="topbar" id="topbar-title"># profile</div>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+    <div class="content">
+      <!-- Profile -->
+      <div id="profile" class="section active">
+        <div class="card">
+          <h3>Rizqy Hillan</h3>
+          <p>Mahasiswa yang tertarik pada Linux, web development, dan teknologi open-source.</p>
+        </div>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+        <div class="card">
+          <h3>Tentang Saya</h3>
+          <p>Saya suka mengeksplorasi sistem Linux, membangun website sederhana, dan belajar teknologi baru. Portfolio ini dibuat dengan tema Discord menggunakan HTML, CSS, dan JavaScript.</p>
+        </div>
+      </div>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            
-         </section>
+      <!-- Skills -->
+      <div id="skills" class="section">
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript dasar</li>
+            <li>Laravel dasar</li>
+            <li>Linux environment</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
+      <!-- Contact -->
+      <div id="contact" class="section">
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Email: rizqy@example.com</p>
+          <p>GitHub: github.com/rizqyhillan</p>
+          <p>Discord: usernamekamu</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
+  <script src="script.js"></script>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-      
-
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="scrollreveal.min.js"></script>
-      
-      <!--=============== EMAIL JS ===============-->
-      
-
-      <!--=============== MAIN JS ===============-->
-      <script src="main.js"></script>
-   </body>
+</body>
 </html>
