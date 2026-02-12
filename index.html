@@ -11,9 +11,15 @@
 
 <!-- SERVER BUBBLES -->
 <div class="servers">
-  <div class="server-icon active" onclick="switchServer(0)"></div>
-  <div class="server-icon" onclick="switchServer(1)"></div>
-  <div class="server-icon" onclick="switchServer(2)"></div>
+  <div class="server-icon active" onclick="switchServer(0)">
+   <img src="pro1.jpeg">
+  </div>
+  <div class="server-icon" onclick="switchServer(1)">
+   <img src="pro2.jpeg">
+  </div>
+  <div class="server-icon" onclick="switchServer(2)">
+   <img src="pro3.jpeg">
+  </div>
 </div>
 
 <!-- SIDEBAR -->
@@ -25,7 +31,7 @@
     <div class="menu-item" onclick="showSection('contact',this)">Contact</div>
   </div>
 
-  <div class="user-box">
+  <div class="user-box" onclick="openPopup()">
     <div class="avatar"></div>
     <div class="user-info">
       <a href="#">Rizqy Hillan</a>
@@ -61,6 +67,24 @@
 
   </div>
 </div>
+<!-- PROFILE POPUP -->
+<div id="profilePopup" class="popup">
+  <div class="popup-card">
+
+    <div class="popup-header"></div>
+
+    <div class="popup-body">
+      <img src="pro5.jpeg" class="popup-avatar">
+
+      <h3>Rizqy Hillan</h3>
+      <p>Tech enthusiast • Web developer • Linux enjoyer</p>
+
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+  </div>
+</div>
+
 <script src="script.js"></script>
 
 </body>
