@@ -11,60 +11,66 @@
       min-height: 100vh;
       background: radial-gradient(circle at top, #0f172a, #020617);
       color: #e5e7eb;
-      overflow-x: hidden;
     }
 
-    /* Hyprland-style top bar */
-    .hyprbar {
+    /* Top Navbar */
+    header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 48px;
-      backdrop-filter: blur(20px);
-      background: rgba(15, 23, 42, 0.6);
+      height: 56px;
+      backdrop-filter: blur(18px);
+      background: rgba(15, 23, 42, 0.7);
       border-bottom: 1px solid rgba(255,255,255,0.1);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 20px;
+      padding: 0 24px;
       z-index: 1000;
     }
 
-    .workspace {
+    /* Menu */
+    nav a {
+      color: #cbd5f5;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 14px;
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #22c55e;
+      opacity: 1;
+    }
+
+    /* Indicator dots (top right) */
+    .indicators {
       display: flex;
       gap: 10px;
     }
 
-    .ws {
+    .dot {
       width: 14px;
       height: 14px;
-      border-radius: 4px;
+      border-radius: 50%;
       background: #1f2933;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.25);
+      opacity: 0.4;
       transition: 0.3s;
     }
 
-    .ws.active {
-      background: #22c55e;
-      box-shadow: 0 0 10px #22c55e;
-    }
-
-    .nav-links a {
-      color: #cbd5f5;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-      opacity: 0.8;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
+    .dot.active {
       opacity: 1;
-      color: #22c55e;
+      box-shadow: 0 0 12px currentColor;
     }
 
-    /* Glass terminal cards */
+    .green.active { background: #22c55e; color: #22c55e; }
+    .yellow.active { background: #facc15; color: #facc15; }
+    .red.active { background: #ef4444; color: #ef4444; }
+
+    /* Sections */
     section {
       max-width: 1000px;
       margin: 120px auto;
@@ -85,23 +91,6 @@
       line-height: 1.7;
       opacity: 0.9;
     }
-
-    /* Terminal header */
-    .terminal-header {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-
-    .red { background: #ef4444; }
-    .yellow { background: #f59e0b; }
-    .green { background: #22c55e; }
 
     /* Skills grid */
     .skills-grid {
@@ -138,8 +127,8 @@
         margin: 100px 16px;
       }
 
-      .nav-links a {
-        margin-left: 10px;
+      nav a {
+        margin-right: 12px;
         font-size: 12px;
       }
     }

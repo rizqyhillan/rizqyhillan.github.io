@@ -8,29 +8,23 @@
 </head>
 <body>
 
-  <!-- Hyprland Top Bar -->
-  <div class="hyprbar">
-    <div class="workspace">
-      <div class="ws active"></div>
-      <div class="ws"></div>
-      <div class="ws"></div>
-    </div>
-
-    <div class="nav-links">
+  <!-- Navbar -->
+  <header>
+    <nav>
       <a href="#profile">Profil</a>
       <a href="#skills">Skill</a>
       <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="indicators">
+      <div class="dot green active"></div>
+      <div class="dot yellow"></div>
+      <div class="dot red"></div>
     </div>
-  </div>
+  </header>
 
   <!-- Profile -->
   <section id="profile">
-    <div class="terminal-header">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-
     <h1>rizqy@linux:~$ whoami</h1>
     <p>
       Saya Rizqy Hillan, mahasiswa yang tertarik pada dunia Linux dan
@@ -41,12 +35,6 @@
 
   <!-- Skills -->
   <section id="skills">
-    <div class="terminal-header">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-
     <h2>rizqy@linux:~$ skills</h2>
 
     <div class="skills-grid">
@@ -61,22 +49,17 @@
 
   <!-- Contact -->
   <section id="contact">
-    <div class="terminal-header">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-
     <h2>rizqy@linux:~$ contact</h2>
     <p>Email: rizqy@example.com</p>
     <p>GitHub: github.com/rizqyhillan</p>
   </section>
 
   <footer>
-    © 2026 Rizqy Hillan — Powered by Linux & Coffee
+    © 2026 Rizqy Hillan — Powered by Linux
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js">
+  </script>
 
 </body>
 </html>
