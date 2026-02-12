@@ -28,12 +28,17 @@ body {
   transition:.2s;
 }
 
+.server-icon.active {
+  background:#5865f2;
+  border-radius:16px;
+}
+
 .server-icon:hover {
   border-radius:16px;
   background:#5865f2;
 }
 
-/* SIDEBAR MENU */
+/* SIDEBAR */
 .sidebar {
   width:240px;
   background:#2b2d31;
@@ -42,9 +47,7 @@ body {
   justify-content:space-between;
 }
 
-.menu {
-  padding:16px;
-}
+.menu { padding:16px; }
 
 .menu-item {
   padding:10px;
@@ -57,7 +60,7 @@ body {
 .menu-item:hover { background:#35373c; color:#fff; }
 .menu-item.active { background:#404249; color:#fff; }
 
-/* USER STATUS (BOTTOM LEFT) */
+/* USER BOX */
 .user-box {
   background:#232428;
   padding:10px;
@@ -81,15 +84,7 @@ body {
   font-size:14px;
 }
 
-.settings-btn {
-  cursor:pointer;
-  padding:6px;
-  border-radius:6px;
-}
-
-.settings-btn:hover { background:#35373c; }
-
-/* MAIN AREA */
+/* MAIN */
 .main {
   flex:1;
   display:flex;
@@ -97,7 +92,6 @@ body {
   background:#313338;
 }
 
-/* TOP BAR */
 .topbar {
   height:56px;
   border-bottom:1px solid #232428;
@@ -116,11 +110,7 @@ body {
   cursor:pointer;
 }
 
-/* CONTENT CENTER */
-.center {
-  flex:1;
-  display:flex;
-}
+.center { flex:1; display:flex; }
 
 .content {
   flex:1;
@@ -152,8 +142,6 @@ body {
   border-radius:8px;
   margin-bottom:12px;
 }
-
-.project-card h4 { margin-bottom:6px; }
 
 @media(max-width:1000px){
   .right{display:none;}

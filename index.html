@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Discord Portfolio UI</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <!-- SERVER BUBBLES -->
 <div class="servers">
-  <div class="server-icon"></div>
-  <div class="server-icon"></div>
-  <div class="server-icon"></div>
+  <div class="server-icon active" onclick="switchServer(0)"></div>
+  <div class="server-icon" onclick="switchServer(1)"></div>
+  <div class="server-icon" onclick="switchServer(2)"></div>
 </div>
 
 <!-- SIDEBAR -->
@@ -25,74 +25,42 @@
     <div class="menu-item" onclick="showSection('contact',this)">Contact</div>
   </div>
 
-  <!-- USER STATUS -->
   <div class="user-box">
     <div class="avatar"></div>
     <div class="user-info">
-      <a href="#" id="userLink">Rizqy Hillan</a>
+      <a href="#">Rizqy Hillan</a>
     </div>
-    <div class="settings-btn">⚙</div>
   </div>
 </div>
 
 <!-- MAIN -->
 <div class="main">
+
   <div class="topbar">
-    <div>Portfolio</div>
+    <div id="serverTitle">Portfolio</div>
     <button class="add-btn">Add Friends</button>
   </div>
 
   <div class="center">
+
     <!-- CENTER CONTENT -->
     <div class="content">
 
-      <div id="profile" class="section active">
-        <div class="card">
-          <h3>Profile</h3>
-          <p>Isi profil kamu di sini.</p>
-        </div>
-      </div>
-
-      <div id="creation" class="section">
-        <div class="card">
-          <h3>Creation</h3>
-          <p>Project atau karya yang pernah kamu buat.</p>
-        </div>
-      </div>
-
-      <div id="skill" class="section">
-        <div class="card">
-          <h3>Skill</h3>
-          <p>Daftar skill kamu.</p>
-        </div>
-      </div>
-
-      <div id="contact" class="section">
-        <div class="card">
-          <h3>Contact</h3>
-          <p>Email / GitHub / sosial media.</p>
-        </div>
-      </div>
+      <div id="profile" class="section active"></div>
+      <div id="creation" class="section"></div>
+      <div id="skill" class="section"></div>
+      <div id="contact" class="section"></div>
 
     </div>
 
     <!-- RIGHT PANEL -->
     <div class="right">
       <h3 style="margin-bottom:12px;">Project Now</h3>
-
-      <div class="project-card">
-        <h4>Portfolio Website</h4>
-        <p>Development ongoing...</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Laravel App</h4>
-        <p>Learning phase</p>
-      </div>
+      <div id="projectPanel"></div>
     </div>
+
   </div>
 </div>
-
 <script src="script.js"></script>
 
 </body>
