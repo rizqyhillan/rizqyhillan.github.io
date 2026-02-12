@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rizqy Hillan Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Rizqy Hillan | Terminal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">   =
 </head>
 <body>
 
@@ -17,63 +18,99 @@
 
     <div class="terminal-body">
       <div>
-        <span class="prompt">rizqyhillan@portfolio:~$</span>
+        <span class="prompt">rizqy@portfolio:~$</span>
         <span class="command">help</span>
       </div>
 
       <div class="output menu">
-        ketik: 
+        ketik:
         <span onclick="showSection('profile')">profile</span>
         <span onclick="showSection('skills')">skills</span>
         <span onclick="showSection('contact')">contact</span>
       </div>
 
+      <!-- PROFILE (Neofetch style) -->
       <div id="profile" class="section active">
         <div>
-          <span class="prompt">rizqyhillan@portfolio:~$</span>
-          <span class="command">profile</span>
+          <span class="prompt">rizqy@portfolio:~$</span>
+          <span class="command">neofetch profile</span>
         </div>
-        <div class="output">
-          Nama: Rizqy Hillan<br>
-          Status: Mahasiswa<br>
-          Fokus: Web Development
+
+        <div class="output fetch">
+<pre class="ascii">
+   /\\\\\\
+  |  o   o |
+  |   ^    |
+  |  \___/ |
+   \_____/
+</pre>
+
+          <div class="info">
+            Nama    : Rizqy Hillan<br>
+            Status  : Mahasiswa<br>
+            Fokus   : Linux & Web Dev<br>
+            OS      : Fedora KDE<br>
+          </div>
         </div>
       </div>
 
+      <!-- SKILLS -->
       <div id="skills" class="section">
         <div>
-          <span class="prompt">rizqyhillan@portfolio:~$</span>
-          <span class="command">skills</span>
+          <span class="prompt">rizqy@portfolio:~$</span>
+          <span class="command">fastfetch skills</span>
         </div>
-        <div class="output">
-          - Linux<br>
-          - HTML / CSS<br>
-          - JavaScript<br>
-          - Laravel<br>
-          - Git & GitHub
+
+        <div class="output fetch">
+<pre class="ascii">
+  &lt;/&gt;
+  HTML
+  CSS
+   JS
+</pre>
+
+          <div class="info">
+            Linux        : Advanced Beginner<br>
+            HTML / CSS   : Intermediate<br>
+            JavaScript   : Beginner<br>
+            Laravel      : Beginner<br>
+            Git / GitHub : Active User
+          </div>
         </div>
       </div>
 
+      <!-- CONTACT -->
       <div id="contact" class="section">
         <div>
-          <span class="prompt">rizqyhillan@portfolio:~$</span>
-          <span class="command">contact</span>
+          <span class="prompt">rizqy@portfolio:~$</span>
+          <span class="command">neofetch contact</span>
         </div>
-        <div class="output">
-          Email : hillan@example.com<br>
-          GitHub: github.com/rizqyhillan
+
+        <div class="output fetch">
+<pre class="ascii">
+   @@@
+  @   @
+  @@@@
+  @   @
+  @@@@
+</pre>
+
+          <div class="info">
+            Email  : rizqy@example.com<br>
+            GitHub : github.com/rizqyhillan<br>
+            Discord: yourusername
+          </div>
         </div>
       </div>
 
       <div>
-        <span class="prompt">rizqyhillan@portfolio:~$</span>
+        <span class="prompt">rizqy@portfolio:~$</span>
         <span class="cursor"></span>
       </div>
     </div>
   </div>
 
-  <script src="script.js">
-  </script>
+  <script src="script.js">  </script>
 
 </body>
 </html>
